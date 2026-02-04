@@ -10,7 +10,7 @@ import { RouterView } from 'vue-router';
     <router-link to="/write">글쓰기</router-link>
   </header>
   <main>
-    <router-view />
+    <router-view :key="$route.fullPath" />
   </main>
 </template>
 
