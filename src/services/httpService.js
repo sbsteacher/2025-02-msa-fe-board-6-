@@ -8,6 +8,11 @@ class HttpService {
         const res = await axios.post(this.#url, params);
         return res.data;
     }
+
+    async findAll(params) {
+        const res = await axios.get(this.#url, { params });
+        return res.data;
+    }
 }
 
 export default new HttpService();
